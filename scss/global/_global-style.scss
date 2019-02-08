@@ -1,0 +1,17 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+body {
+  font-family: PT_Sans;
+  font-size: $body-font-size;
+  line-height: 22px;
+  margin: 0;
+  padding: 0;
+  a {
+    line-height: 22px;
+  }
+}
+.overflow {
+  overflow: hidden;
+}

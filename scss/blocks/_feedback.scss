@@ -1,0 +1,121 @@
+.modal-window {
+  display: none;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.active-mask {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $modal-window-mask-background-color;
+  z-index: 10;
+  display: block;
+}
+.popup {
+  display: none;
+  #close-popup-block {
+    height: 27px;
+    width: 27px;
+    position: absolute;
+    left: calc(50% + 233px);
+    top: calc(50% - 316px);
+    background-color: $background-button;
+    #close-image {
+      width: 15px;
+      height: 15px;
+      padding: 6px;
+    }
+  }
+  #close-popup-block:hover {
+    cursor: pointer;
+  }
+}
+.active-popup {
+  animation-name: fade;
+  animation-duration: 0.8s;
+  display: block;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  top: calc(50% - 316px);
+  left: calc(50% - 233px);
+  width: 466px;
+  height: 578px;
+  z-index: 100;
+  .popup-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #title-feedback {
+      text-transform: uppercase;
+      line-height: 17px;
+      margin: 0;
+      padding: 35px 0;
+      font-size: 24px;
+      font-weight: 700;
+      width: 186px;
+      height: 17px;
+      color: $form-color-label;
+    }
+    #feedback-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      #button-submit {
+        margin: 22px 0 26px 0;
+        border: none;
+        padding: 14px 16px 15px 17px;
+        font-size: 18px;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+        background-color: $background-button;
+        line-height: 16px;
+      }
+      label {
+        color: $form-color-label;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 10px;
+        white-space: nowrap;
+      }
+      #label-name {
+        width: 67px;
+        height: 10px;
+        padding-bottom: 9px;
+      }
+      #label-number {
+        width: 60px;
+        height: 13px;
+        padding: 20px 0 6px 0;
+      }
+      #label-email {
+        width: 41px;
+        height: 10px;
+        padding: 22px 0 9px 0;
+      }
+      #label-message {
+        width: 70px;
+        height: 13px;
+        padding: 22px 0 7px 0;
+      }
+      #user-name,
+      #user-number,
+      #user-email {
+        width: 339px;
+        height: 38px;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      #user-message {
+        width: 339px;
+        height: 138px;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+    }
+  }
+}

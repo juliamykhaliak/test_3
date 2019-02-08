@@ -1,0 +1,52 @@
+#slider {
+  div.wrap-slider.disabled {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 155px;
+    width: 100%;
+  }
+  .left {
+    margin-left: 118px;
+    background-image: url("../images/left-arrow.png");
+  }
+  .right {
+    margin-right: 118px;
+    background-image: url("../images/right-arrow.png");
+  }
+  .left,
+  .right {
+    z-index: 3;
+    width: 34px;
+    height: 61px;
+    border: none;
+    box-sizing: border-box;
+    background-size: 34px 61px;
+    background-repeat: no-repeat;
+    background-position: center;
+    span {
+      display: none;
+    }
+  }
+  .left:hover,
+  .right:hover {
+    cursor: pointer;
+  }
+  .owl-carousel {
+    position: relative;
+  }
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  .wrap-slider {
+    padding: 0 10px;
+    .slider-image {
+      overflow: hidden;
+      width: 100%;
+      height: auto;
+    }
+  }
+}

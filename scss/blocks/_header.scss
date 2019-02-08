@@ -1,0 +1,57 @@
+#header {
+  background-color: $header-color;
+  width: 100%;
+  height: 230px;
+  color: $title-footer-nav-main-color;
+  display: flex;
+  .header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    width: 100%
+  }
+  #logo-block {
+    display: flex;
+    width: 273px;
+    height: 100px;
+    align-items: center;
+    padding: 65px 0;
+    img {
+      width: 100px;
+    }
+  }
+  #numbers {
+    width: 256px;
+    height: 81px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    padding: 45px 0 71px 0;
+    p {
+      margin: 0;
+      line-height: 46px;
+    }
+    #feedback-link {
+      text-decoration: none;
+      font-family: "PT Sans";
+      font-size: 24px;
+      font-weight: 700;
+      color: $title-footer-nav-main-color;
+      float: right;
+      line-height: 46px;
+      margin-right: 14px;
+      border-bottom: 1px $title-footer-nav-main-color dashed;
+      height: 33px;
+    }
+  }
+  .text-company {
+    margin-left: 8px;
+    h1 {
+      font-size: $h1-size;
+    }
+    .subtitle {
+      font-size: 0.7rem;
+    }
+  }
+}
