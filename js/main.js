@@ -24,6 +24,11 @@ $('.modal-window').on('click', function () {
   $('body').removeClass('overflow');
 });
 
+//Remove class overflow for body after click on close button
+$('#close-popup-block').on('click', function () {
+  $('body').removeClass('overflow');
+});
+
 //Slider
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
