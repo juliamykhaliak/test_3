@@ -6,6 +6,9 @@
     top: 155px;
     width: 100%;
   }
+  .owl-dots {
+    display: none;
+  }
   .left {
     margin-left: 118px;
     background-image: url("../images/left-arrow.png");
@@ -40,7 +43,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 400px;
+  height: 380px;
   .wrap-slider {
     padding: 0 10px;
     .slider-image {
@@ -48,5 +51,8 @@
       width: 100%;
       height: auto;
     }
+  }
+  @media all and (max-width: 1248px) {
+    display: none;
   }
 }

@@ -1,4 +1,8 @@
 #footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   #copyright-block {
     padding-right: 150px;
     p {
@@ -25,7 +29,6 @@
     }
   }
   .footer-logo {
-    padding-right: 158px;
     #logo-footer {
       width: 36px;
       height: 38px;

@@ -3,11 +3,14 @@
   margin: 0 auto;
 }
 body {
-  font-family: PT_Sans;
+  font-family: 'open_sanscondensed_light', sans-serif;
   font-size: $body-font-size;
   line-height: 22px;
   margin: 0;
   padding: 0;
+  position: relative;
+  min-height: 100vh;
+  min-width: 1000px;
   a {
     line-height: 22px;
   }

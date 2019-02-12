@@ -39,7 +39,7 @@
   display: block;
   position: absolute;
   background-color: rgb(255, 255, 255);
-  top: calc(50% - 316px);
+  top: calc(50vh - 316px);
   left: calc(50% - 233px);
   width: 466px;
   height: 578px;
@@ -50,6 +50,7 @@
     align-items: center;
     #title-feedback {
       text-transform: uppercase;
+      white-space: nowrap;
       line-height: 17px;
       margin: 0;
       padding: 35px 0;

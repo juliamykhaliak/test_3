@@ -29,9 +29,10 @@ $('#close-popup-block').on('click', function () {
   $('body').removeClass('overflow');
 });
 
-//Slider
+let owl;
+
 $(document).ready(function(){
-  $(".owl-carousel").owlCarousel({
+  owl = $(".owl-carousel").owlCarousel({
     items:1,
     autoplayTimeout:4000,
     navClass: ['left', 'right'],
@@ -40,7 +41,14 @@ $(document).ready(function(){
     animateOut: 'fadeOut',
     navContainerClass: 'wrap-slider',
   });
+
+  owl.on('changed.owl.carousel', function(e) {
+    owl.trigger('stop.owl.autoplay');
+    owl.trigger('play.owl.autoplay');
+  });
 });
+
+
 
 
 
